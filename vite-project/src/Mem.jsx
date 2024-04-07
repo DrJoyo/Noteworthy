@@ -4,18 +4,19 @@ import PropTypes from 'prop-types'; // Import PropTypes
 function Button(props) {
     const {name, img} = props;
     const memStyle = {
-        height:'300px',
-        width:'300px',
+        height:'500px',
+        width:'500px',
         fontSize:'30px',
         justifyContent: 'center',
         alignItems: 'center',
         textAlign:'center',
-        color:'#FFFFFF',
-        fontWeight:'bold'
+        color:'#000000',
+        fontWeight:'bold',
+        margin:'100px'
     }
     return (
         <div style={memStyle}>
-            <img src={img} style={{height:'300px', width:'300px'}}></img>
+            <img src={img} style={{height:'500px', width:'500px'}}></img>
             <p>{name}</p>
         </div>
     )
